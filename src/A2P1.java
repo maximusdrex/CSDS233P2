@@ -13,8 +13,10 @@ public class A2P1 {
                 while(next >= x) {
                     if(next == x) {
                         return true;
-                    } else if (j == 0){
-                        break;
+                    } else if (j < 0){
+                        //If the current element in the matrix is > x and the leftmost element in a row,
+                        //then x can't be in the matrix since all remaining elements are > that element
+                        return false;
                     } else {
                         next = matrix[i][j];
                         j--;
@@ -48,6 +50,8 @@ public class A2P1 {
         if(args.length > 2) {
             x = Integer.parseInt(args[2]);
         }
+
+        debugInfo(matrix, x);
 
         long start = System.nanoTime();
         Boolean isInMat = inMatrix(matrix, x);
