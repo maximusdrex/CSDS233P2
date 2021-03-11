@@ -21,6 +21,6 @@
     \section*{}
         I was not finding any statistically significant difference in running time for the small matricices I made so I tested from n = 2 to n = 500. To do this, I packed the program into a jar so it could be run easily. To create this many valid matricies, I wrote a python script to generate a matrix of given dimensions where each element is a random number greater than both the element above and to the left of it by 1 - 4. (gendata.py)
             
-        In order to test the complexity of the program, I  used a bash script to run the program, parse the runtime from the output, then write it to a csv file for easy analysis. The script tested 3 randomly selected numbers from each matrix 3 times, outputting the difference in System.nanotime().
+        In order to test the complexity of the program, I  used a bash script to run the program, parse the runtime from the output, then write it to a csv file for easy analysis. The script tested 3 randomly selected numbers from each matrix 3 times, writing the difference in System.nanotime().
 
 \end{document}

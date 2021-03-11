@@ -2,7 +2,7 @@
 
 OUTF=$1
 
-for i in {1..500}
+for i in {1..50}
 do
 	for j in {1..3}
 	do
