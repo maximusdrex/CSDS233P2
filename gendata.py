@@ -18,11 +18,11 @@ for y in range(dim):
         if y > 0:
             above = mat[y-1][x]
         start = max(above, left)
-        mat[y].append(random.randint(start, start + 4))
+        mat[y].append(random.randint(start + 1, start + 4))
 
 print(mat)
 
-datf = open("data" + str(dim) + ".dat", "w")
+datf = open("data" + str(dim) + ".dat", "w+")
 
 for y in range(dim):
     for x in range(dim):
